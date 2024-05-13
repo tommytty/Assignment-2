@@ -1,0 +1,15 @@
+<%- include("templates/header") %>
+
+<div class="container mt-4">
+    <h1>Welcome, <%= name %>!</h1>
+    <div class="row">
+        <% images.forEach(function(image) { %>
+            <div class="col-sm-4">
+                <img src="<%= image %>" class="img-fluid" alt="Responsive image">
+            </div>
+        <% }); %>
+    </div>
+    <a href="/logout" class="btn btn-primary mt-3">Logout</a>
+</div>
+
+<%- include("templates/footer") %>
